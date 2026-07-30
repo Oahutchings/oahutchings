@@ -59,7 +59,7 @@
     <!-- Container spacing >
     .image-grid-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
 <!-- Common image styles to keep them crisp and responsive >
-    .image-grid-section img { width: 100%; height: auto; display: block; border-radius: 8px; <!-- Optional rounded corners > }
+    .image-grid-section img { width: 100%; height: auto; display: block; border-radius: 8px; }
 <!-- 1. Featured Big Image Layout >
 .featured-item { 
   background-size: cover;
@@ -77,10 +77,14 @@
   border-radius: 0px;
 }
   
-.featured-item .caption { margin-bottom: 15px; <!-- Pushes text above or below as needed > }
+.featured-item .caption { margin-bottom: 15px; }
 <!-- 2. Three Images Side-by-Side >
-.three-column-grid { display: flex; gap: 24px; <!-- The gap between the three columns > }
-.grid-item { flex: 1; <!-- Makes all 3 columns equal width > }
+.three-column-grid {
+  display: flex !important; 
+  gap: 24px; 
+    }
+    
+.grid-item { flex: 1; }
 .grid-item .caption { margin-top: 12px; margin-bottom: 40px; }
 <!-- Mobile Responsiveness: Stack columns vertically on small screens >
 @media (max-width: 768px) { .three-column-grid { flex-direction: column; gap: 30px; } }
@@ -93,7 +97,7 @@
   <header>
     <h1>Hi, I'm Ozzy Hutchings</h1>
     <p class="subtitle"> Electrical Engineering Student at Memorial University of Newfoundland</p>
-    <p>This is 1.8</p>
+    <p>This is 1.9</p>
   </header>
 
   <section>
@@ -130,7 +134,7 @@
   <!-- Top Section: 1 Big Image + Text -->
       <div class="caption">
       <h3>Winning First Place</h3>
-      <p>This is the text that appears above or directly under your main big image.</p>
+      <p>Woooo</p>
     </div>
   <div class="featured-item">
     <img src="images/NRCWaveTank.png" alt="Featured Image Description">
