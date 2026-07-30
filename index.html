@@ -64,13 +64,17 @@
     .featured-item .caption { margin-bottom: 15px; }
     
     .three-column-grid {
-      display: flex !important; 
-      gap: 24px; 
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 20px;
+      width: 100%; 
     }
-    .grid-item { flex: 1; }
+    .grid-item { flex: 1 1 0px !important; min-width: 0; }
     .grid-item .caption { margin-top: 12px; margin-bottom: 40px; }
+    .grid-item img { width: 100%; height: auto; display: block; }
     
     @media (max-width: 768px) { .three-column-grid { flex-direction: column; gap: 30px; } }
+    
   </style>
 </head>
 <body>
@@ -80,7 +84,7 @@
   <header>
     <h1>Hi, I'm Ozzy Hutchings</h1>
     <p class="subtitle"> Electrical Engineering Student at Memorial University of Newfoundland</p>
-    <p>This is 1.103</p>
+    <p>This is 1.104</p>
   </header>
 
   <section>
