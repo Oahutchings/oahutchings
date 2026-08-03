@@ -92,14 +92,34 @@
       gap: 10px;
       width: 100%; 
     }
-    .fake-single-image {
-      display: in-line block !important;
-      flex-direction: row !important;
-      object-fit: contain;
-      margin-bottom: 35px;
-      gap: 0px;
-      width: 100%; 
-    }
+    
+  .side-by-side-images {
+  display: flex;
+  gap: 15px;             /* Space between the two photos */
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.side-by-side-images img {
+  width: 50%;            /* Forces each image to take up half the width */
+  height: 250px;         /* Sets a uniform height so they align cleanly */
+  object-fit: cover;     /* Fits the image inside without stretching */
+  border-radius: 6px;
+  display: block;
+}
+
+/* On mobile screens, stack them vertically so they stay easy to read */
+@media (max-width: 768px) {
+  .side-by-side-images {
+    flex-direction: column;
+  }
+  .side-by-side-images img {
+    width: 100%;
+    height: auto;
+  }
+}
+    
     .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
     .grid-item .caption { margin-top: 10px; margin-bottom: 35px; }
     .grid-item .label {margin-top: 10px; margin-bottom:15px;}
@@ -205,14 +225,10 @@ Graph the float’s depth over time</p>
     <div class="label">
       <h4>Final Graph: Earned full points in mission run</h4>
     </div>
-      <div class="grid-item">
-  <div class="fake-single-image">
-    <img src="images/FloatData.png" alt="Float Data">
-  </div>
-      <div class="fake-single-image">
-    <img src="images/VerticalProfiler.png" alt="Final Graph">
-  </div>
-      </div>
+      <div class="side-by-side-images">
+  <img src="images/FloatData.png" alt="Float Data">
+  <img src="images/VerticalProfiler.png" alt="Final Graph">
+</div>
 </section>
 
   <section class="image-grid-section">
