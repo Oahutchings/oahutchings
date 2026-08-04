@@ -40,22 +40,22 @@
     } 
   
       .eer-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusFav.jpg'); background-size: cover;
-    background-position: 55% 35%; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 8 / 4; min-height: 0px; padding: 3rem 1.5rem;
+    background-position: 55% 35%; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 2 / 1; min-height: 0px; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .eer-banner h2 { color: #ffffff; font-size: 2.2rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
 
     .eer-end-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusPlacingInWater.png'); background-size: cover;
-    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 8 / 4; padding: 3rem 1.5rem;
+    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 2 / 1; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .eer-end-banner h2 { color: #ededed; font-size: 2.0rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
 /*
     .school-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusPlacingInWater.png'); background-size: cover;
-    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 8 / 4;; padding: 3rem 1.5rem;
+    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 2 / 1;; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .school-banner h2 { color: #ededed; font-size: 2.0rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
 
     .school-end-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusPlacingInWater.png'); background-size: cover;
-    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 8 / 4; padding: 3rem 1.5rem;
+    background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 2 / 1; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .school-end-banner h2 { color: #ededed; font-size: 2.0rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
 */
@@ -93,7 +93,7 @@
 
 .side-by-side-images img {
   width: 50%;            /* Forces each image to take up half the width */
-  height: 250px;         /* Sets a uniform height so they align cleanly */
+  aspect-ratio: 1 / 1;         /* Sets a uniform height so they align cleanly */
   object-fit: cover;     /* Fits the image inside without stretching */
   display: block;
 }
@@ -109,8 +109,8 @@
     .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
     .grid-item .caption { margin-top: 10px; margin-bottom: 35px; }
     .grid-item .label {margin-top: 10px; margin-bottom:15px;}
-    .grid-item img { width: 100%; height: 170px; object-fit: cover; object-position: center; display: block; }
-    .grid-item .two img { width: 100%; height: 250px; object-fit: contain; display: block; }
+    .grid-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center; display: block; }
+    .grid-item .two img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; display: block; }
     
     @media (max-width: 768px) { .three-column-grid { flex-direction: column; gap: 30px; } }
     @media (max-width: 768px) { .two-column-grid { flex-direction: column; gap: 30px; } }
@@ -297,7 +297,7 @@ Graph the float’s depth over time</p>
 
 <section>
   <div class = "project">
-    <fun-fact>Fun Fact: I was only junior member of EER to participate in two mission runs for the 2026 competition, scoring full points in both</fun-fact>
+    <fun-fact>Fun Fact: I was the only junior member of EER to participate in two mission runs for the 2026 competition, scoring full points in both</fun-fact>
     <div class="eer-end-banner">
       <h2>First Place Winner of International MATE ROV 2026 Competition</h2>
     </div>
