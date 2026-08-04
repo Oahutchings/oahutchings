@@ -100,13 +100,10 @@
 
 /* On mobile screens, stack them vertically so they stay easy to read */
 @media (max-width: 768px) {
-  .side-by-side-images {
-    flex-direction: column;
-  }
-  .side-by-side-images img {
-    width: 100%;
-    height: auto;
-  }
+  .page-container { width: 100vw; padding: 2rem 1.25rem; }
+      .eer-banner, .eer-end-banner { width: calc(100% + 2.5rem); margin-left: -1.25rem; }
+      .three-column-grid, .two-column-grid, .side-by-side-images { flex-direction: column; gap: 20px; } 
+      .side-by-side-images img { width: 100%; height: auto; }
 }
     
     .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
