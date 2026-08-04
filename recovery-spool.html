@@ -26,9 +26,8 @@
       box-sizing: border-box;
       overflow: hidden;
     }
-    .NRC-banner {background-image: url('images/NRCWaveTank.png'); background-size: cover; background-position: center; background-repeat: no-repeat; 
-                 width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 2 / 1; min-height: 350px; padding: 3rem 1.5rem; 
-                 box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
+    .big-photo {width: 100%; min-height: 350px; aspect-ratio: 2 / 1; padding: 3rem 1.5rem;
+                object-fit: cover; object-position: center; display: block;}
     
     h1 { margin-bottom: 0.5rem; color: #01284a; }
     fun-fact {font-size: 0.9rem; margin-bottom:1.5rem;}
@@ -86,10 +85,9 @@
       </div>
     </div>
   </div> 
-      <div class="caption">
       <fun-fact>Fun Fact: EER is one of only three teams to get full points in the wave tank out of 86 total teams in the 2026 international MATE ROV competition</fun-fact>
-    </div>
-  <div class="NRC-banner">
+  <div class="big-photo">
+    <img src="images/NRCWaveTank.png" alt="Wave Tank at the NRC" >
   </div>
     </div>
 </section>
