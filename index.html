@@ -38,7 +38,37 @@
       display: block;
       margin: 1rem 0;
     } 
-  
+    
+<label for="projects">Choose a project:</label>
+<select name="projects" id="projects">
+  /* Default placeholder */
+  <option value="" disabled selected>Select a project...</option>
+
+  /* Ongoing Category 
+  <optgroup label="Ongoing">
+    <option value="ongoing-project-1">Current Active Project</option>
+  </optgroup> */
+
+  /* Eastern Edge Category */
+  <optgroup label="Eastern Edge Robotics">
+    <option value="spool">Recovery Spool</option>
+    <option value="profiler">Vertical Profiler UI</option>
+    <option value="misc">Miscellaneous</option>
+  </optgroup>
+
+  /* School Category */
+  <optgroup label="School Projects">
+    <option value="logbook">Digital Logbook</option>
+    /*<option value="school-2">Circuit Design Project</option>
+    <option value="school-3">Embedded Systems Lab</option> */
+  </optgroup>
+
+  /* Personal Category
+  <optgroup label="Personal Projects">
+    <option value="portfolio">Portfolio Website</option>
+  </optgroup> */
+</select>
+    
       .eer-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusFav.jpg'); background-size: cover;
     background-position: 55% 35%; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 16 / 7; min-height: 0px; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
