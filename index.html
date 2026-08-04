@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"; scroll-behavior: smooth;>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -143,6 +143,20 @@
     @media (max-width: 768px) { .three-column-grid { flex-direction: column; gap: 30px; } }
     @media (max-width: 768px) { .two-column-grid { flex-direction: column; gap: 30px; } }
     @media (max-width: 768px) { .fake-single-image { flex-direction: column; gap: 30px; } }
+
+<script>
+  const projectSelect = document.getElementById('projects');
+
+  projectSelect.addEventListener('change', function() {
+    const targetId = this.value; // Gets the selected option value
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      // Smoothly scroll to the corresponding section
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
     
   </style>
 </head>
@@ -157,6 +171,33 @@
     <!-- This is version 1.1.33 of my portfolio! -->
   </header>
 
+<label for="projects">Jump to a project:</label>
+
+<select name="projects" id="projects">
+  <option value="" disabled selected>Select a project...</option>
+
+  <!--<optgroup label="Ongoing">
+    <option value="ongoing-project">Current Project</option>
+  </optgroup> -->
+
+  <optgroup label="Eastern Edge Robotics">
+    <option value="spool">Recovery Spool</option>
+    <option value="profiler">Vertical Profiler UI</option>
+    <option value="misc">Miscellaneous</option>
+  </optgroup>
+
+  <optgroup label="School Projects">
+    <option value="logbook">Digital Logbook</option>
+    <!--<option value="school-2">School Project 2</option>
+    <option value="school-3">School Project 3</option> -->
+  </optgroup>
+
+  <!-- <optgroup label="Personal">
+    <option value="portfolio">Portfolio Website</option>
+  </optgroup> -->
+</select>
+
+  
   <!--
 <section>
   <div class="school-banner"
@@ -210,7 +251,7 @@
     </div>
   </section>
   
-  <section>
+  <section id="spool">
         <div class="project">
       <h2>Recovery Spool</h2>
     </div>
@@ -249,7 +290,7 @@
 </section>
 
   
-  <section>
+  <section id="profiler">
         <div class="project">
       <h2>Vertical Profiler User Interface</h2>
           <p class="subtitle"> Implemented using C++</p>
@@ -290,6 +331,7 @@ Graph the float’s depth over time</p>
 </div>
 </section>
 
+  <section id ="misc">
   <div class = "project">
     <h2>Miscellaneous Projects With Eastern Edge Robotics</h2>
   <section class="image-grid-section">
