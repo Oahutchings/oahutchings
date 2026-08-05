@@ -58,7 +58,7 @@
     margin: 0;
   }
 
-  /* Level 1: Category Names (Ongoing, Eastern Edge, Personal, School) */
+  /* Category Names  */
   .nav-tree > ul > li {
     font-size: 1.25rem;
     font-weight: 400;
@@ -67,7 +67,7 @@
     color: #000000;
   }
 
-  /* Level 2: Project Links */
+  /* Project Links */
   .nav-tree ul ul {
     padding-left: 2.5rem; /* Indents sub-projects further right */
   }
@@ -90,12 +90,13 @@
     text-decoration: underline;
   }
 /* end of dropdown */
-      .eer-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusFav.jpg'); background-size: cover;
+    
+      .start-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusFav.jpg'); background-size: cover;
     background-position: 55% 35%; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 16 / 7; min-height: 0px; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .eer-banner h2 { color: #ffffff; font-size: 2.2rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
 
-    .eer-end-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusPlacingInWater.png'); background-size: cover;
+    .end-banner { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/BonusPlacingInWater.png'); background-size: cover;
     background-position: center; background-repeat: no-repeat; width: calc(100% + 5rem); margin-left: -2.5rem; aspect-ratio: 16/7; padding: 3rem 1.5rem;
     box-sizing: border-box; display: flex; justify-content: center; align-items: center; }
     .eer-end-banner h2 { color: #ededed; font-size: 2.0rem; margin: 0; text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); text-align: center; }
@@ -105,68 +106,15 @@
 
     fun-fact {font-size: 0.9rem; margin-bottom:1.5rem;}
     
-    .image-grid-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
-    .image-grid-section img { width: 100%; height: 250px; object-fit: contain; display: block; }
-    
-    .featured-item { margin-bottom: 35px; object-fit:cover; object-position: center; display: block; }
-    .featured-item .caption { margin-bottom: 15px; margin-top: 20px; }
-    
-    .three-column-grid {
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 20px;
-      width: 100%; 
-    }
-    .two-column-grid {
-      display: flex !important;
-      flex-direction: row !important;
-      gap: 20px;
-      width: 100%; 
-    }
-    
-  .side-by-side-images {
-  display: flex;
-  gap: 0px;            
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 35px;
-}
-
-.side-by-side-images img {
-  width: 50%;            /* Forces each image to take up half the width */
-  height: 250px;         /* Sets a uniform height so they align cleanly */
-  object-fit: cover;     /* Fits the image inside without stretching */
-  display: block;
-}
- .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
-    .grid-item .caption { margin-top: 10px; margin-bottom: 35px; }
-    .grid-item .label {margin-top: 10px; margin-bottom:15px;}
-    .grid-item img { width: 100% !important; height: auto !important; object-fit: contain !important; display: block !important; margin: 0 !important; }
-    .grid-item .two img { width: 100% !important; height: auto !important; object-fit: contain !important; display: block !important; }
-    
-/* On mobile screens, stack them vertically so they stay easy to read */
-@media (max-width: 768px) {
-  .page-container { width: 100vw; padding: 2rem 1.25rem; }
-      .eer-banner, .eer-end-banner { width: calc(100% + 2.5rem); margin-left: -1.25rem; }
-      .three-column-grid, .two-column-grid, .side-by-side-images { flex-direction: column; gap: 20px; } 
-      .side-by-side-images img { width: 100%; height: auto; }
-}
-    @media (max-width: 768px) { .three-column-grid { flex-direction: column; gap: 30px; } }
-    @media (max-width: 768px) { .two-column-grid { flex-direction: column; gap: 30px; } }
-    @media (max-width: 768px) { .fake-single-image { flex-direction: column; gap: 30px; } }
-    
   </style>
 </head>
 <body>
-
-  
 <div class="page-container">
-  <header>
-    <h1>Hi, I'm Ozzy Hutchings!</h1>
-    <p class="subtitle"> Electrical Engineering Student at Memorial University of Newfoundland</p>
+  <div class="start-banner">
+    <h2>Hi, I'm Ozzy Hutchings!<br> Term 4 Electrical Engineering Student at Memorial University</h2>
     <!-- I am continuously updating and improving my portfolio website -->
     <!-- This is version 1.1.33 of my portfolio! -->
-  </header>
+  </div>
   <!-- Dropdown start -->
 <div class="nav-tree">
   <h2>Projects</h2>
@@ -184,71 +132,21 @@
       School Related
       <ul>
         <li><a href="digital-logbook.html">Password Protect Digital Logbook</a></li>
-        <li><a href="pumpkin-launcher.html">Pumpkin Launcher</a></li>
+        <!-- <li><a href="pumpkin-launcher.html">Pumpkin Launcher</a></li> -->
       </ul>
     </li> 
   </ul>
 </div>
   <!-- dropdown end -->
   
-  <!--
-<section>
-  <div class="school-banner"
-    <h2> School Projects </h2>
-  </div>
-</section>
-<section class = "image-grid-section">
-  <div class= "three-column-grid" >
-  <div class = "grid-item">
-  <img src = "images/PasswordLogbookTestOne.png" alt= "Test 1"
-  <div class = "caption>
-  <h4> Password Protected Digitial Logbook </h4>
-  <p>- Designed a digital logbook to store and manage confidential user data, implementing a software-hardware security system to keep information secure <br> 
-  - Built a complex system that has a 100% success rate in preventing unauthorized user access <br>
-  - Prepared and delivered live demonstration of product, presenting design functionality and practical uses </p>
-</div>
-</div>  
-<div class="grid-item">
-      <img src="images/replace" alt="">
-      <div class="caption">
-        <h4>project2</h4>
-        <p> </p>
-      </div>
-    </div>
-    <div class="grid-item">
-      <img src="images/replace.png" alt="" >
-      <div class="caption">
-        <h4>project3</h4>
-        <p> </p>
-      </div>
-    </div>
-  </div> 
+
   
-  
-<section>
-  <div class = "project">
-    <fun-fact>Fun Fact: </fun-fact>
-    <div class="school-end-banner">
-      <h2>Words </h2>
-    </div>
-  </div>
-</section>
--->
-  
-  <section>
-    <div class="eer-banner">
-      <h2>Eastern Edge Robotics</h2>
-    </div>
-    <div class ="project">
-      <p class = "subtitle"> Eastern Edge Robotics (EER) is a design team at Memorial University where students, like me, are able to gain hands-on experience. </p>
-    </div>
-  </section>
 
 
 <section>
   <div class = "project">
     <fun-fact>Fun Fact: I was the only junior member of EER to participate in two mission runs for the 2026 competition, scoring full points in both</fun-fact>
-    <div class="eer-end-banner">
+    <div class="end-banner">
       <h2>Feel free to reach out via email or connect on my socials:<br>
         <a href="mailto:hutchingsozzy@gmail.com">hutchingsozzy@gmail.com</a>&nbsp;|&nbsp; 
         <a href="https://linkedin.com/in/ozzy-hutchings-690306414" target="_blank" rel="noopener">LinkedIn</a></h2>
@@ -256,15 +154,6 @@
   </div>
 </section>
 
- <!-- 
-  <section style="margin-top: 3rem; border-top: 1px solid #e0e0e0; padding-top: 1.5rem;">
-    <h2>Feel free to reach out via email or connect on my socials:</h2>
-    <p>
-      <a href="mailto:hutchingsozzy@gmail.com">hutchingsozzy@gmail.com</a>&nbsp;|&nbsp; 
-      <a href="https://linkedin.com/in/ozzy-hutchings-690306414" target="_blank" rel="noopener">LinkedIn</a>
-    </p>
-  </section>
-  -->
 </div>
 
 </body>
