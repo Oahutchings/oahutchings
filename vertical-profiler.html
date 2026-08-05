@@ -31,27 +31,27 @@
     .back-link:hover { text-decoration: underline; }
     
     h1 { font-size: 2.0rem; margin-bottom: 0.5rem; color: #01284a; }
-    fun-fact {font-size: 1.1rem; margin-bottom:1.2rem; display:block; text-align: center; font-weight: 500;}
     h4 {  font-size: 1.5rem; margin-bottom:0.5rem; }
     p { font-size: 1.3rem;}
-          
-    .featured-item { margin: 0 auto 10px auto; width: 100%; display: flex; justify-content: center; }
-    .featured-item img { width: 100% !important; max-width: 1000px; height: 500px !important; object-fit: contain; display: block; margin: 0 auto; }
-          
+    fun-fact {font-size: 1.1rem; margin-bottom:1.2rem; display:block; text-align: center; font-weight: 500;}
+               
     .image-grid-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
     .image-grid-section img { width: 100%; height: 250px; object-fit: contain; display: block; }
           
-    .three-column-grid { display: flex !important; flex-direction: row !important; gap: 20px; width: 100%; }
+    .two-column-grid { display: flex !important; flex-direction: row !important; gap: 20px; width: 100%; }
+    .side-by-side-images { display: flex !important; gap: 0px !important ; width: 100%; margin-top: 15px; margin-bottom: 35px; }
 
  .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
     .grid-item .caption { margin-top: 10px; margin-bottom: 10px; }
+    .grid-item .label {margin-top: 10px; margin-bottom:15px;}
     .grid-item img { width: 100% !important; height: auto !important; object-fit: contain !important; display: block !important; margin: 0 !important; }
+    .grid-item .two img { width: 100% !important; height: auto !important; object-fit: contain !important; display: block !important; }
     
 /* On mobile screens, stack them vertically so they stay easy to read */
 @media (max-width: 768px) {
   .page-container { width: 100vw; padding: 2rem 1.25rem; } 
-        .three-column-grid { flex-direction: column; gap: 20px; }
-  .featured-item img { height: 300px !important; } }    
+        .two-column-grid, .side-by-side-images { flex-direction: column; gap: 20px; }
+        .side-by-side-images img { width: 100%; height: auto; } }    
   </style>
 </head>
 <body>
