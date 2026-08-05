@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous - Ozzy Hutchings</title>
+  <style>
+    body {
+      background-color: #e3f2ff;
+      font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #052642;
+    }
 
+    .page-container {
+      background-color: #ffffff;
+      width: 75vw;
+      min-width: 320px;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 3rem 2.5rem;
+      min-height: 80vh;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+.back-link {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+  }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    h1 { font-size: 2.0rem; margin-bottom: 0.5rem; color: #01284a; }
+    fun-fact {font-size: 1.1rem; margin-bottom:1.2rem; display:block; text-align: center; font-weight: 500;}
+    h4 {  font-size: 1.5rem; margin-bottom:0.5rem; }
+    p { font-size: 1.3rem;}
+          
+    .featured-item { margin: 0 auto 10px auto; width: 100%; display: flex; justify-content: center; }
+    .featured-item img { width: 100% !important; max-width: 1000px; height: 500px !important; object-fit: contain; display: block; margin: 0 auto; }
+          
+    .image-grid-section { max-width: 1100px; margin: 0 auto; padding: 20px; }
+    .image-grid-section img { width: 100%; height: 250px; object-fit: contain; display: block; }
+          
+    .three-column-grid { display: flex !important; flex-direction: row !important; gap: 20px; width: 100%; }
+
+ .grid-item { flex: 1 1 0px !important; min-width: 0; overflow: hidden; }
+    .grid-item .caption { margin-top: 10px; margin-bottom: 10px; }
+    .grid-item img { width: 100% !important; height: auto !important; object-fit: contain !important; display: block !important; margin: 0 !important; }
+    
+/* On mobile screens, stack them vertically so they stay easy to read */
+@media (max-width: 768px) {
+  .page-container { width: 100vw; padding: 2rem 1.25rem; } 
+        .three-column-grid { flex-direction: column; gap: 20px; }
+  .featured-item img { height: 300px !important; } }    
+  </style>
+</head>
+
+<!-- Start of HTML -->
+<body>       
+<!-- 
+ 
+      </div>
+      <div class="grid-item">
+        <img src="images/BareChassis.png" alt="Chassis">
+        <div class="caption">
+          <h4>Chassis</h4>
+          <p>ROV Frame<br>
+            Needed frame to attach ROV hardward<br>
+            Built large enough frame so there was enough space for tooling and cameras</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="images/DrillPress.jpg" alt="Drill Press" >
+        <div class="caption">
+          <h4>Drill Press</h4>
+          <p>Used to fix the sizing and alignment of holes between enclosure and lid<br>
+            Allowed for more secure water seal</p>
+        </div>
+      </div>    
+    </div>
+  </div>
+  </section>
+-->
+<section>
+  <div class = "page-container" >
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <h1>Miscellaneous Projects</h1>
+    <section class="image-grid-section">
+      <div class="three-column-grid">
+        <div class="grid-item">
+          <img src="images/PenetratorPotting.png" alt="Potting Penetrators" >
+          <div class="caption">
+            <h4>Potting Penetrators</h4>
+            <p>To make sure no water could leak through the penetrators during operations, Epoxy was used to fill all gaps that wires could have left</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/BareChassis.png" alt="ROV Chassis">
+          <div class="caption">
+            <h4>ROV Chassis</h4>
+            <p>To build the chassis for the ROV, I calculated how much space would be needed for all tooling and cameras, and then cut the aluminium extrusion to those lengths using a horizontal bandsaw</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="images/DrillPress.jpg" alt="Drill Press" >
+          <div class="caption">
+            <h4>Drill Press</h4>
+            <p>To make maintenance and leak testing more efficient, I used a drill press to fix the sizing and alignment between enclosure and lid, also allowing for a more secure water seal</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+</body>
+</html>
